@@ -1,16 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import ContactForm from "../components/ContactForm.astro";
 ---
 
 <Layout title="Welcome to Astro.">
   <main>
-    <button class="btn">Button</button>
-
     <h1>Melbourne Weed Spraying</h1>
+
     <p class="instructions">
-      To get started, open the directory <code>src/pages</code> in your project.<br
-      />
+      Call 0490 100 028<br />
       <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
     </p>
     <ul role="list" class="link-card-grid">
@@ -21,6 +20,7 @@ import Card from "../components/Card.astro";
       />
     </ul>
   </main>
+  <ContactForm />
 </Layout>
 
 <style>
