@@ -2,25 +2,15 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import ContactForm from "../components/ContactForm.astro";
+import Image from "../components/ui/Image.astro";
 ---
 
 <Layout title="Welcome to Astro.">
   <main>
     <h1>Melbourne Gardening and Weed Spraying</h1>
-
-    <p class="instructions">
-      Call 0490 100 028<br />
-      <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-    </p>
-    <ul role="list" class="link-card-grid">
-      <Card
-        href="https://docs.astro.build/"
-        title="Documentation"
-        body="Learn how Astro works and explore the official API docs."
-      />
-    </ul>
+    <Image />
+    <ContactForm />
   </main>
-  <ContactForm />
 </Layout>
 
 <style>

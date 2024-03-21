@@ -25,12 +25,6 @@ import Button from "./ui/Button.astro";
       value="c1e42c00-5f45-4fd6-bfbf-51eb98d71c92"
     />
 
-    <input
-      type="checkbox"
-      class="hidden"
-      style="display:none"
-      name="botcheck"
-    />
     <div class="mb-5">
       <input
         type="text"
@@ -70,6 +64,12 @@ import Button from "./ui/Button.astro";
         Please enter your message.
       </div>
     </div>
+    <input
+      type="checkbox"
+      class="hidden"
+      style="display:none"
+      name="botcheck"
+    />
     <Button type="submit" size="lg" style="primary" block>Send Message</Button>
     <div id="result" class="mt-3 text-center"></div>
   </form>

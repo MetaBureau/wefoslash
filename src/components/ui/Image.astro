@@ -1,0 +1,10 @@
+---
+import { Picture } from "astro:assets";
+import myImage from "../../assets/i/photo-garden.jpg"; // Image is 1600x900
+---
+
+<Picture
+  src={myImage}
+  formats={["avif", "webp"]}
+  alt="WeFo Slasher: West Footscray Gardening and weed spraying services"
+/>
