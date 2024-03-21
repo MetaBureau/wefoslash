@@ -17,7 +17,7 @@ import Button from "./ui/Button.astro";
     novalidate
   >
     <!-- -- Step 1: Add this line ---->
-    <div class="h-captcha" data-captcha="true"></div>
+
     <!-- Add your Web3Forms Access Key -->
     <input
       type="hidden"
@@ -64,12 +64,15 @@ import Button from "./ui/Button.astro";
         Please enter your message.
       </div>
     </div>
-    <input
-      type="checkbox"
-      class="hidden"
-      style="display:none"
-      name="botcheck"
-    />
+    <!-- <div class="mt-3 text-center">
+      <div class="h-captcha" data-captcha="true"></div>
+      <input
+        type="checkbox"
+        class="hidden"
+        style="display:none"
+        name="botcheck"
+      />
+    </div> -->
     <Button type="submit" size="lg" style="primary" block>Send Message</Button>
     <div id="result" class="mt-3 text-center"></div>
   </form>
